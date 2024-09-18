@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Start": {
+      "commandName": "Project",
+      "commandLineArgs": "-ro D:\\Develop\\Extern\\GitHub.KsWare\\UpdatePackageReferences\\UpdatePackageReferences.sln"
+    }
+  }
+}

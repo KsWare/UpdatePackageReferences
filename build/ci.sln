@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpdatePackageReferences", "..\src\UpdatePackageReferences\UpdatePackageReferences.csproj", "{D111F3C9-A617-4F56-BC77-3401705701A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdatePackageReferences.Tests", "..\tests\UpdatePackageReferences.Tests\UpdatePackageReferences.Tests.csproj", "{57668850-6779-4A8A-AD34-4A21B3108C05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D111F3C9-A617-4F56-BC77-3401705701A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D111F3C9-A617-4F56-BC77-3401705701A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57668850-6779-4A8A-AD34-4A21B3108C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57668850-6779-4A8A-AD34-4A21B3108C05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49A16D7E-4023-4604-A3BD-EADB8FA9C711}
+	EndGlobalSection
+EndGlobal

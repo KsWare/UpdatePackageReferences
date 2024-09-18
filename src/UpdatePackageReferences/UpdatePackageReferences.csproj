@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>Properties\app.ico</ApplicationIcon>
+    <PackageId>KsWare.$(AssemblyName)</PackageId>
+    <Authors>KsWare</Authors>
+    <Company>KsWare</Company>
+    <Copyright>Copyright © 2024 by KsWare. All rights reserved.</Copyright>
+    <PackageIcon>PackageIcon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <VersionPrefix>0.1.0</VersionPrefix>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="..\..\LICENSE.txt" Link="Properties\LICENSE.txt" />
+    <Content Include="..\..\PackageIcon.png" Link="Properties\PackageIcon.png" />
+    <Content Include="Properties\app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\CHANGELOG.md" Link="Properties\CHANGELOG.md" />
+    <None Include="..\..\README.md" Link="Properties\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Versioning" Version="6.11.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="KsWare.VsFileEditor" Version="0.1.1" Condition="'$(Configuration)' == 'Release'" />
+    <ProjectReference Include="..\..\..\VsFileEditor\src\VsFileEditor\VsFileEditor.csproj" Condition="'$(Configuration)' == 'Debug'" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Properties\PackageIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
