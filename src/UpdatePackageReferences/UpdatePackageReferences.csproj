@@ -15,6 +15,10 @@
     <VersionPrefix>0.1.0</VersionPrefix>
 	  <PackageProjectUrl>https://github.com/KsWare/UpdatePackageReferences</PackageProjectUrl>
 	  <RepositoryUrl>https://github.com/KsWare/UpdatePackageReferences</RepositoryUrl>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Description>Updates package references</Description>
+	  <PackageTags>nuget;cli;package;update</PackageTags>
+	  <PackAsTool>True</PackAsTool>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="..\..\LICENSE.txt" Link="Properties\LICENSE.txt" />
