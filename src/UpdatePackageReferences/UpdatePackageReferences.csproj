@@ -22,15 +22,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="..\..\LICENSE.txt" Link="Properties\LICENSE.txt" />
-    <Content Include="..\..\PackageIcon.png" Link="Properties\PackageIcon.png" />
-    <Content Include="Properties\app.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\CHANGELOG.md" Link="Properties\CHANGELOG.md" />
-    <None Include="..\..\README.md" Link="Properties\README.md">
+		<Content Include="Properties\app.ico" />
+		<Content Include="Properties\PackageIcon.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+    </Content>
+		<Content Include="..\..\CHANGELOG.md" Link="Properties\CHANGELOG.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</Content>
+    <Content Include="..\..\README.md" Link="Properties\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
-    </None>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NuGet.Versioning" Version="6.11.0" />
@@ -38,11 +42,5 @@
   <ItemGroup>
     <PackageReference Include="KsWare.VsFileEditor" Version="0.1.2" Condition="'$(Configuration)' == 'Release'" />
     <ProjectReference Include="..\..\..\VsFileEditor\src\VsFileEditor\VsFileEditor.csproj" Condition="'$(Configuration)' == 'Debug'" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="Properties\PackageIcon.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
   </ItemGroup>
 </Project>
