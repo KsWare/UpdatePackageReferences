@@ -79,10 +79,18 @@ internal static class Program {
 			  -Minor                     update up to the highest minor (major remains the same)
 			  -Patch                     update up to the highest patch (major/minor remains the same)
 			  -PreRelease                allow pre releases
+			  -ro -readonly              does not make any changes
+			  -unicode                   use Unicode ending
+			  -color -noColor            turns colorization on/off (default: auto)
 			  <file(s)>                  path(s) to sln/proj file(s)
 
 			-ReferenceSwitcher:
-			If this is specified, only PackageReferences with matching ProjectReference will be updated.
+			  If this is specified, only PackageReferences with matching ProjectReference will be updated.
+			
+			-color -noColor  
+			  By default redirected console output (VS Console Window) does not use colors,
+			  because ANSI sequences are not supported but System Console Windows does.
+			  With -color -noColor you can force a mode. 
 			""";
 		Echo(txt);
 		Environment.Exit(0);
